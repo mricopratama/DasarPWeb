@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulir asal ada</title>
+  </head>
+  <body>
+    <div
+      style="
+        border-radius: 10px;
+        background-color: aliceblue;
+        border: solid black 1px;
+        padding: 10px;
+      "
+      align="center"
+    >
+      <div
+        style="
+          border-radius: 10px;
+          background-color: white;
+          border: solid black 1px;
+          padding: 10px;
+        "
+      >
+        <h2>Formulir Sederhana</h2>
+      </div>
+
+      <form action="#" method="get">
+        <label for="name">Nama:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          size="30"
+          placeholder="Nama"
+        /><br /><br />
+
+        <label>UKM yang diminati:</label><br />
+        <input type="checkbox" id="tkd" name="UKM" value="Taekwondo" />
+        <label for="tkd">Taekwondo</label><br />
+        <input type="checkbox" id="msk" name="UKM" value="Musik" />
+        <label for="msk">Musik</label><br /><br />
+
+        <label>Pilih Jenis Kelamin:</label><br />
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Pria</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Wanita</label><br /><br />
+
+        <label for="prodi">Prodi:</label><br />
+        <select name="prodi" id="prodi">
+          <option value="Informatika">Informatika</option>
+          <option value="Teknik Sipil">Teknik Sipil</option>
+          <option value="Psikologi">Psikologi</option></select
+        ><br /><br />
+
+        <label for="alamat">Alamat:</label><br />
+        <textarea
+          name="alamat"
+          id="alamat"
+          cols="50"
+          rows="5"
+          placeholder="Alamat"
+        ></textarea
+        ><br /><br />
+
+        <input type="submit" value="Kirim" />
+
+        <input type="reset" value="Reset Form" />
+      </form>
+    </div>
+  </body>
+</html>

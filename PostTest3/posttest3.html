@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulir Pendaftaran</title>
+  </head>
+  <body
+    style="
+      font-family: sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    "
+  >
+    <div
+      style="
+        background-color: #ffffff;
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        border-radius: 8px;
+      "
+    >
+      <h2 style="text-align: center; color: #0077cc">Formulir Pendaftaran</h2>
+      <hr style="border: 1px solid #0077cc" />
+
+      <form action="terimakasih.html" method="get">
+        <label for="nama"><b>Nama</b></label
+        ><br />
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          required
+          style="width: 100%; margin-bottom: 10px"
+        /><br />
+
+        <label for="email"><b>Email</b></label
+        ><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          style="width: 100%; margin-bottom: 10px"
+        /><br />
+
+        <label for="gender"><b>Jenis Kelamin</b></label
+        ><br />
+        <input type="radio" name="gender" value="Pria" required /> Pria
+        <input type="radio" name="gender" value="Wanita" /> Wanita<br /><br />
+
+        <label for="instansi"><b>Instansi</b></label
+        ><br />
+        <select
+          name="instansi"
+          id="instansi"
+          style="width: 100%; margin-bottom: 10px"
+          required
+        >
+          <option value="">-- Pilih --</option>
+          <option value="SMA">SMA</option>
+          <option value="SMK">SMK</option>
+          <option value="Kuliah">Kuliah</option></select
+        ><br />
+
+        <label for="pesan"><b>Pesan</b></label
+        ><br />
+        <textarea
+          name="pesan"
+          id="pesan"
+          rows="3"
+          style="width: 100%; margin-bottom: 15px"
+        ></textarea
+        ><br />
+
+        <!-- Checkbox tambahan -->
+        <label><b>Hobi</b></label
+        ><br />
+        <input type="checkbox" name="hobi" value="Membaca" /> Membaca
+        <input type="checkbox" name="hobi" value="Olahraga" /> Olahraga
+        <input type="checkbox" name="hobi" value="Musik" /> Musik
+        <input type="checkbox" name="hobi" value="Traveling" />
+        Traveling<br /><br />
+
+        <div style="text-align: center">
+          <button
+            type="submit"
+            style="
+              background-color: #0077cc;
+              color: white;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 5px;
+            "
+          >
+            Kirim
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
