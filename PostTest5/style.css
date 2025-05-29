@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    height: 180px;
+}
+
+.top-bar {
+    background-color: #1c2141;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    padding-right: 40px;
+}
+
+.top-bar .profile{
+    width: 30px;
+    margin-bottom: -10px;
+    margin-right: -10px;
+}
+
+.top-bar .lock{
+    width: 35px;
+    margin-bottom: -12px;
+    margin-right: -10px;
+}
+
+
+.main-container {
+    display: flex;
+    background-color: white;
+}
+
+.content {
+    flex: 3;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.konten{
+    display: flex;
+}
+
+.content img{
+    width: 300px;
+    margin-top: 20px;
+}
+
+.content p{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.sidebar {
+    height: 330px;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.sidebar h3{
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #ff5900;
+    display: block;
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #1c2141;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer .highlight {
+    color: gold;
+}
