@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <div class="container">
+        <header>
+            <h1>Form Biodata</h1>
+            <div class="header-right">
+                <label for="change-theme">Tema: </label>
+                <button id="theme-btn" onclick="tombolTema()">Dark</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-form">
+                <h2>Informasi Pribadi</h2>
+                <form name="biodataform" id="biodataform">
+                    <div class="form-group">
+                        <label for="fullName">Nama Lengkap: </label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nim">NIM: </label>
+                        <input type="text" name="nim" id="nim" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jenis Kelamin: </label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="Laki-laki" required>
+                            <label for="laki-laki">Laki-laki</label>
+                            <input type="radio" id="female" name="gender" value="Perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Program Studi: </label>
+                        <select name="prodi" id="prodi" required>
+                            <option value="">--Pilih Program Studi--</option>
+                            <option value="Informatika">Informatika</option>
+                            <option value="Teknik Industri">Teknik Industri</option>
+                            <option value="Teknik Kimia">Teknik Kimia</option>
+                            <option value="Teknologi Pangan">Teknologi Pangan</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="alamat">Alamat: </label>
+                        <textarea name="alamat" id="alamat" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="button" onclick="submitForm()" >Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="display-data" id="resultSection" style="display: none;">
+                <h2>Informasi Terkirim</h2>
+                <div class="result-box">
+                    <p>Nama Lengkap: <span id="ofullName"></span></p>
+                    <p>NIM: <span id="onim"></span></p>
+                    <p>Gender: <span id="ogender"></span></p>
+                    <p>Program Studi: <span id="oprodi"></span></p>
+                    <p>Alamat: <span id="oalamat"></span></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
