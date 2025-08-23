@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpan Buku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div align="center">
+        <strong>
+            <font size="6" face="Courier New, Courier, mono">PROGRAM SIMPAN BUKU</font>
+        </strong>
+    </div>
+    <form enctype="multipart/form-data" name="form1" method="post" action="proses.php">
+        <table width="58%" border="0" align="center">
+            <tr>
+                <td>Nama Lengkap</td>
+                <td><input type="text" name="nama" id="nama"></td>
+            </tr>
+
+            <tr>
+                <td>Alamat</td>
+                <td><input type="text" name="alamat" id="alamat"></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="email" id="email"></td>
+            </tr>
+
+            <tr>
+                <td>Status</td>
+                <td>
+                    <select name="status" id="status">
+                        <option value="Menikah">Menikah</option>
+                        <option value="Single">Single</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Upload Buku</td>
+                <td>
+                    <input type="file" name="fupload"><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Deskripsi Buku</td>
+                <td>
+                    <textarea name="deskripsi" id="deskripsi" cols="45" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" name="Submit" value="Kirim">
+                    <input type="reset" name="Submit2" value="Batal">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div align="center">
+        <strong>
+            <a href="lihat.php">::Lihat Buku Tersimpan::</a>
+        </strong>
+    </div>
+</body>
+
+</html>
