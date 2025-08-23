@@ -1,6 +1,6 @@
 # DasarPWeb
 
-Koleksi file dari mata kuliah Dasar-dasar Pemrograman Web. Repositori ini berisi serangkaian Laporan Praktikum (`Langprak`) dan `Post-Test` yang mencakup berbagai aspek dasar pengembangan web, mulai dari HTML, CSS, hingga JavaScript.
+Koleksi file dari mata kuliah Dasar-dasar Pemrograman Web. Repositori ini berisi serangkaian Laporan Praktikum (`Langprak`) dan `Post-Test` yang mencakup berbagai aspek dasar pengembangan web, mulai dari HTML, CSS, JavaScript, hingga PHP dan interaksi dengan file.
 
 ## Struktur Folder
 
@@ -24,6 +24,18 @@ Repositori ini dibagi menjadi beberapa folder, masing-masing sesuai dengan topik
     -   `KuisLaprak.docx`: Tugas untuk membuat desain web berdasarkan contoh yang diberikan.
 -   **Langprak6&7**: Pengenalan JavaScript untuk interaktivitas web.
     -   `langkahpraktikum.html` & `header.js`: Implementasi formulir pemesanan tiket dengan kalkulasi biaya menggunakan JavaScript. Termasuk fungsi untuk mengubah warna latar belakang halaman.
+-   **Langprak8&9**: Dasar-dasar PHP.
+    -   `laprak1statis.php`: Menjelaskan sintaks dasar PHP, variabel, tipe data, percabangan (if, else, switch), dan perulangan (for, while, foreach).
+    -   `laprak1dinamis.php`: Contoh formulir biodata yang diproses menggunakan metode POST pada PHP.
+    -   `laprak2.php`: Demonstrasi fungsi-fungsi bawaan PHP untuk string (`explode`, `implode`, `strlen`) dan waktu (`date`).
+-   **Langprak10**: Manipulasi File dengan PHP.
+    -   `counter.php`: Skrip untuk membuat penghitung jumlah pengunjung sederhana dengan membaca dan menulis data ke file `counter.txt`.
+    -   `mode_w.php` & `mode_a.php`: Menunjukkan perbedaan mode penulisan file, yaitu 'w' (write/overwrite) dan 'a' (append/menambahkan).
+-   **Langprak11**: Upload File dan Guestbook.
+    -   `fungsiUpload`: Contoh dasar formulir untuk mengunggah file dan skrip PHP untuk memprosesnya.
+    -   `guestBook`: Aplikasi buku tamu sederhana di mana pengguna dapat mengisi data yang kemudian disimpan dalam `guestbook.txt` dan ditampilkan.
+-   **Langprak12**: Hosting.
+    -   Materi mengenai cara meng-hosting atau mempublikasikan proyek web agar dapat diakses secara online.
 
 ### Post-Test
 
@@ -43,3 +55,9 @@ Repositori ini dibagi menjadi beberapa folder, masing-masing sesuai dengan topik
     -   `posttest.html`, `style.css`, `script.js`: Formulir biodata interaktif yang memiliki fitur:
         -   **Ubah Tema**: Mengganti tema dari terang (`light-theme`) ke gelap (`dark-theme`).
         -   **Validasi & Tampilan Data**: Memeriksa apakah semua form telah diisi sebelum menampilkan data yang telah di-submit tanpa me-refresh halaman.
+-   **PostTest8&9**: Aplikasi PHP.
+    -   `post.php`: Menggabungkan form HTML dengan PHP untuk memproses input dan menampilkan output dinamis berdasarkan data yang dikirim, serta menggunakan fungsi `date()` dan `strlen()`.
+-   **PostTest10**: Aplikasi Lanjutan Manipulasi File.
+    -   Implementasi berbagai jenis penghitung pengunjung: sebuah counter sederhana dengan gaya, counter yang terintegrasi dengan formulir, dan counter dengan pilihan mode operasi file (read, write, append).
+-   **PostTest11**: Proyek Buku Tamu dengan Upload File.
+    -   `tampilan.html`, `proses.php`, `lihat.php`, `style.css`: Sebuah aplikasi buku tamu yang lebih lengkap di mana pengguna tidak hanya dapat mengirimkan teks tetapi juga mengunggah file. Data dan nama file yang diunggah akan disimpan dan ditampilkan dengan tautan untuk melihat file tersebut.
